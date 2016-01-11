@@ -1,0 +1,42 @@
+﻿@model TomToFileInfo.Models.Jam
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Jam</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Region.RegionName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Region.RegionName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Traject.TrajectName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Traject.TrajectName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JamText)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JamText)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.JamID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
